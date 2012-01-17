@@ -1,5 +1,5 @@
 #!/usr/bash
-cd /Users/jesse/projects/bing-wallpapers/
+cd /Users/wasimakram/play/bing-wallpaper/
 curl "http://themeserver.microsoft.com/default.aspx?p=Bing&c=Desktop&m=en-US" | grep -o 'url="[^"]*"' | sed -e 's/url="\([^"]*\)"/\1/' | sed -e "s/ /%20/g" > tmp.txt
 
 #read file line
